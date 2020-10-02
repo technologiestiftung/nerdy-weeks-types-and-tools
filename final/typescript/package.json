@@ -1,0 +1,23 @@
+{
+  "name": "types-final",
+  "version": "1.0.0",
+  "scripts": {
+    "start:ex1": "ts-node-dev --respawn --transpile-only ex1/index.ts",
+    "start:ex2": "ts-node-dev --respawn --transpile-only ex2/index.ts",
+    "start:ex3": "ts-node-dev --respawn --transpile-only ex3/index.ts",
+    "start:ex4": "ts-node-dev --respawn --transpile-only ex4/index.ts",
+    "start:ex5": "ts-node-dev --respawn --transpile-only ex5/index.ts",
+    "start:ex6": "ts-node-dev --respawn --transpile-only ex6/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.2.0",
+    "@typescript-eslint/parser": "4.2.0",
+    "eslint": "7.9.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.1.2",
+    "ts-node-dev": "1.0.0-pre.63",
+    "typescript": "4.0.3"
+  }
+}

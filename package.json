@@ -1,0 +1,21 @@
+{
+  "name": "@tsb/nerdy-weeks-types-and-tools",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "lerna bootstrap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technologiestiftung/nerdy-weeks-types-and-tools.git"
+  },
+  "keywords": [],
+  "author": "Fabian Morón Zirfas <fabianmoronzirfas@protonmail.ch> (https://fabianmoronzirfas.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technologiestiftung/nerdy-weeks-types-and-tools/issues"
+  },
+  "homepage": "https://github.com/technologiestiftung/nerdy-weeks-types-and-tools#readme",
+  "devDependencies": {
+    "lerna": "^3.18.3"
+  }
+}

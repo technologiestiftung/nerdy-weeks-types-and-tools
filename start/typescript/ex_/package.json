@@ -1,0 +1,18 @@
+{
+  "name": "ex_-start",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.2.0",
+    "@typescript-eslint/parser": "4.2.0",
+    "eslint": "7.9.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.1.4",
+    "prettier": "2.1.2",
+    "ts-node-dev": "1.0.0-pre.63",
+    "typescript": "4.0.3"
+  }
+}

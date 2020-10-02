@@ -1,0 +1,31 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "christian-kohler.npm-intellisense",
+    "codezombiech.gitignore",
+    "eriklynd.json-tools",
+    "me-dutour-mathieu.vscode-github-actions",
+    "ms-azuretools.vscode-docker",
+    "ms-vsliveshare.vsliveshare-pack",
+    "shd101wyy.markdown-preview-enhanced",
+    "TabNine.tabnine-vscode",
+    "yzhang.markdown-all-in-one",
+    "pkief.material-icon-theme",
+    "arcticicestudio.nord-visual-studio-code",
+    "johnpapa.vscode-peacock",
+    "wayou.vscode-todo-highlight",
+    "britesnow.vscode-toggle-quotes",
+    "eamodio.gitlens",
+    "ban.spellright",
+    "pnp.polacode",
+    "timonwong.shellcheck",
+    "tyriar.sort-lines",
+    "bibhasdn.unique-lines",
+    "formulahendry.auto-rename-tag",
+    "ymotongpoo.licenser",
+    "github.vscode-pull-request-github",
+    "mikestead.dotenv"
+  ]
+}
