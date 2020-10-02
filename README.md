@@ -1,3 +1,4 @@
+<img src="./assets/artwork.png" width="100%" alt="nerdy weeks - types and tools artwork">
 # Nerdy Weeks Types & Tools
 
 
@@ -5,13 +6,13 @@
 
 <!-- code_chunk_output -->
 
-- [Nerdy Weeks Types & Tools](#nerdy-weeks-types-tools)
+- [Nerdy Weeks Types & Tools](#nerdy-weeks-types--tools)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
   - [VSCode Things](#vscode-things)
     - [Extension](#extension)
     - [Fonts](#fonts)
-    - [Color & Icon Theme](#color-icon-theme)
+    - [Color & Icon Theme](#color--icon-theme)
     - [Settings](#settings)
   - [Exercises](#exercises)
 
