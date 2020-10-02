@@ -1,21 +1,21 @@
 <img src="./assets/artwork.png" width="100%" alt="nerdy weeks - types and tools artwork">
 
-# Nerdy Weeks Types & Tools
+<h1 style="width:100%; font-weight:800; text-align: center;">Nerdy Weeks Types & Tools</h1>
 
 
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=2 depthTo=6 orderedList=false} -->
 
 <!-- code_chunk_output -->
 
-- [Nerdy Weeks Types & Tools](#nerdy-weeks-types--tools)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [VSCode Things](#vscode-things)
-    - [Extension](#extension)
-    - [Fonts](#fonts)
-    - [Color & Icon Theme](#color--icon-theme)
-    - [Settings](#settings)
-  - [Exercises](#exercises)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [VSCode Things](#vscode-things)
+  - [Extension](#extension)
+  - [Fonts](#fonts)
+  - [Color & Icon Theme](#color--icon-theme)
+  - [Settings](#settings)
+- [Exercises](#exercises)
 
 <!-- /code_chunk_output -->
 
@@ -102,7 +102,7 @@ To enable italics you need to add some settings to your VSCode.  You will find t
 
 ### Color & Icon Theme
 
-The color theme of choice os the [Nord theme](https://www.nordtheme.com/). Which can be found for many different editors or shells
+The color theme of choice os the [Nord theme](https://www.nordtheme.com/). Which can be found for many different editors or shells (here for [VSCode](https://marketplace.visualstudio.com/items?itemName=arcticicestudio.nord-visual-studio-code)). The file icons are the [Material Icon theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 
 ### Settings
 
