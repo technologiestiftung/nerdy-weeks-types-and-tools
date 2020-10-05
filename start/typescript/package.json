@@ -2,7 +2,14 @@
   "name": "ex_-start",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only index.ts",
+    "ex1": "npm run dev -- ex1/index.ts ",
+    "ex2": "npm run dev -- ex2/index.ts ",
+    "ex3": "npm run dev -- ex3/index.ts ",
+    "ex4": "npm run dev -- ex4/index.ts ",
+    "ex5": "npm run dev -- ex5/index.ts ",
+    "ex6": "npm run dev -- ex6/index.ts ",
+    "predev": "node -e \"process.stdout.write('\\033c')\"",
+    "dev": "ts-node-dev --respawn --transpile-only ",
     "build": "tsc"
   },
   "devDependencies": {
