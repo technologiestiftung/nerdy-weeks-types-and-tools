@@ -1,3 +1,4 @@
+*/.vsoode/*
 .vscode/*
 !.vscode/extensions.json
 # Logs
