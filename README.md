@@ -40,7 +40,7 @@ To get started and install all dependencies for you run the following commands i
 ```bash
 git clone git@github.com:technologiestiftung/nerdy-weeks-types-and-tools.git
 cd nerdy-weeks-types-and-tools
-npm ci && npm run setup --quiet
+npx lerna bootstrap
 ```
 
 This will use [lerna](https://lerna.js.org/) to install all dependencies in the subfolders, so you don't have to.

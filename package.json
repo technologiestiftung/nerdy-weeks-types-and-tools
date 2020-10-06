@@ -15,7 +15,5 @@
     "url": "https://github.com/technologiestiftung/nerdy-weeks-types-and-tools/issues"
   },
   "homepage": "https://github.com/technologiestiftung/nerdy-weeks-types-and-tools#readme",
-  "devDependencies": {
-    "lerna": "3.22.1"
-  }
+  "devDependencies": {}
 }
