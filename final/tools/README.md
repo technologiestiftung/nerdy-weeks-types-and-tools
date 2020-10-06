@@ -16,12 +16,13 @@ npm install \
 # create a tsconfig.json
 npx tsc --init
 # create a .eslintrc.js
+npx eslint --init
 ```
 
 `tsconfig.json` and `.eslintrc.js` need some editing.
 
-- Adding prettier to `extends` and `plugins` in `.eslintrc.js`
-- Adding `src/` and `dist/` under `rootDir` and `outDir` in `tsconfig.json`
+- Adding `prettier` to `extends` and `plugins` in [`.eslintrc.js`](.eslintrc.js)
+- Adding `src/` and `dist/` under `rootDir` and `outDir` in [`tsconfig.json`](tsconfig.json)
 
 
 !Hint you can create files called `.eslintignore` and `.prettierignore` to configure ignore patterns.
@@ -31,6 +32,7 @@ Finally edit `package.json` and add these scripts for formatting, linting and ru
 
 ```json
 {
+  // …
     "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint \"./src/*\" --fix",
@@ -39,5 +41,6 @@ Finally edit `package.json` and add these scripts for formatting, linting and ru
     "dev": "ts-node --respawn --transpile-only src/index.ts",
     "start": "node dist/index.js"
   }
+  // …
 }
 ```

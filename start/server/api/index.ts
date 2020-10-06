@@ -1,6 +1,6 @@
 console.log("Hello API");
 
-// install express and cors
+// install express, cors and morgan
 // install @types
 // use cors
 // use json

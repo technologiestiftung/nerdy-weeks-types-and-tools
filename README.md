@@ -1,4 +1,4 @@
-<img src="./assets/artwork.png" width="100%" alt="nerdy weeks - types and tools artwork">
+<img src="./assets/nerdy-weeks-types-and-tools.png" width="100%" alt="nerdy weeks - types and tools artwork">
 
 <h1 style="width:100%; font-weight:800; text-align: center;">Nerdy Weeks Types & Tools</h1>
 

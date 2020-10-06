@@ -1,4 +1,4 @@
-**/.vsoode/*
+**/.vscode/*
 .vscode/*
 !.vscode/extensions.json
 # Logs
@@ -139,3 +139,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 start/typescript/.vscode/settings.json
+start/client/.vscode/settings.json
