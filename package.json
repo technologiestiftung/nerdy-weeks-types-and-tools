@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/technologiestiftung/nerdy-weeks-types-and-tools#readme",
   "devDependencies": {
-    "lerna": "3.22.1"
+    "lerna": "3.22.1",
+    "mdx-deck": "4.1.1"
   }
 }
