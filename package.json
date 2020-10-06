@@ -2,8 +2,7 @@
   "name": "@tsb/nerdy-weeks-types-and-tools",
   "version": "1.0.0",
   "scripts": {
-    "setup": "lerna bootstrap",
-    "deck": "mdx-deck deck.mdx"
+    "setup": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
