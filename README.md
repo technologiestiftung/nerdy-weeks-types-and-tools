@@ -40,6 +40,7 @@ To get started and install all dependencies for you run the following commands i
 ```bash
 git clone git@github.com:technologiestiftung/nerdy-weeks-types-and-tools.git
 cd nerdy-weeks-types-and-tools
+npm ci
 npm run setup --quiet
 ```
 
