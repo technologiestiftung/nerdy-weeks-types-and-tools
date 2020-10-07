@@ -44,3 +44,19 @@ Finally edit `package.json` and add these scripts for formatting, linting and ru
   // …
 }
 ```
+
+To make eslint format on save add this snippet to your VSCode `settings.json`.
+
+```json
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      }
+}
+```
