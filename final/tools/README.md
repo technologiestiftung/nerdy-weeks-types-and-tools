@@ -45,7 +45,7 @@ Finally edit `package.json` and add these scripts for formatting, linting and ru
 }
 ```
 
-To make eslint format on save add this snippet to your VSCode `settings.json`.
+To make eslint format on save add this snippet to your VSCode `settings.json`. This can also be found under [./vscode-things/fabianmoronzirfas.settings.json](./vscode-things/fabianmoronzirfas.settings.json).
 
 ```json
 {
