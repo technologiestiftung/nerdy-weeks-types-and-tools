@@ -1,27 +1,45 @@
 import React from "react";
-
+import { Headline } from "./components/Headline";
+import { Output } from "./components/Output";
+import { Button } from "./components/Button";
+import { Input } from "./components/Input";
+import { ApiResponse, getFoods } from "./lib/requests";
 function App() {
+  const [inputFood, setInputFood] = React.useState<string | undefined>(
+    undefined
+  );
+  const [data, setData] = React.useState<ApiResponse | undefined>(undefined);
+
+  React.useEffect(() => {
+    getFoods("/api/foods")
+      .then((json) => {
+        setData(json);
+        const oneFood =
+          json.fruits.data[Math.floor(Math.random() * json.fruits.data.length)];
+        setInputFood(oneFood);
+      })
+      .catch(console.error);
+  }, []);
+
   return (
     <div className="App">
-      <h1>The favorite food is</h1>
-      <h2>input food</h2>
-      <form>
-        <label htmlFor="method">HTTP Method</label>
-        <select name="method" id="method">
-          <option value="GET">GET</option>
-          <option value="GET">POST</option>
-        </select>
-        <br />
-        <label htmlFor="text">Add your food</label>
-        <input type="text" id="text" />
-        <br />
-        <button type="submit">Submit</button>
-      </form>
-      <div className="output">
-        <pre>
-          <code>JSON.stringify(data, null, 2)</code>
-        </pre>
-      </div>
+      <Headline inputFood={inputFood} />
+      <Input
+        changeHandler={(event) => {
+          event.preventDefault();
+          console.log("change on  input");
+        }}
+      >
+        <Button
+          clickHandler={(event) => {
+            event.preventDefault();
+            console.log("clicked");
+          }}
+        >
+          Submit
+        </Button>
+      </Input>
+      <Output data={data} />
     </div>
   );
 }

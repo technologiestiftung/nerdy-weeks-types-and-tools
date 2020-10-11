@@ -14,6 +14,7 @@ export function getFruitById(req: Request, res: Response): void {
 export function getFruit(req: Request, res: Response): void {
   res.json({ fruits });
 }
+
 export function postFruit(req: Request, res: Response): void {
   const { food } = req.body;
 

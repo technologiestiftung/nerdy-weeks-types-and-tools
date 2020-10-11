@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-types */
 //   █████▒█    ██  ███▄    █
 // ▓██   ▒ ██  ▓██▒ ██ ▀█   █
 // ▒████ ░▓██  ▒██░▓██  ▀█ ██▒
@@ -24,65 +25,69 @@
 // functions functions functions
 // functions functions functions
 //
-//
-//
-// as we already learned we can type functions using
-// interfaces and types
-/*
-type Things = "burger" | "socks" | "beer";
+// //
+// //
+// // as we already learned we can type functions using
+// // interfaces and types
+// type Things = "burger" | "socks" | "beer";
 
-interface FunOptions {
-  value: number;
-  type: Things;
-}
+// interface FunOptions {
+//   value: number;
+//   type: Things;
+// }
 
-function fun(opts: FunOptions): void {
-  console.log(opts.value, opts.type);
-}
+// function fun(opts: FunOptions): void {
+//   console.log(opts.value, opts.type);
+// }
 
-fun({ value: 5, type: "beer" });
+// fun({ value: 5, type: "beer" });
 
-// we can declare the function in a different way
-const moreFun: (opts: FunOptions) => void = ({ value, type }) => {
-  console.log(value, type);
-};
-moreFun({ value: 3, type: "socks" });
+// const moreFun: (opts: FunOptions) => void = ({ value, type }) => {
+//   console.log(value, type);
+// };
 
-// or with a type
+// moreFun({ value: 3, type: "socks" });
 
-type FunType = (opts: FunOptions) => void;
-const lotMoreFun: FunType = ({ value, type }) => {
-  console.log(value, type);
-};
-lotMoreFun({ value: 2, type: "burger" });
-*/
+// type FunType = (opts: FunOptions) => void;
 
-/*
-of course functions can return types, interfaces, primitives, classes. You name it
-function evenMoreFun(...args: number[]): number[] {
-  return args.map((x) => x * 2);
-}
-evenMoreFun(1, 2, 3, 4);
-*/
-//
-//
-//
-//
-//
-//
-//
-/*
-// Arguments can be optional
-function optionalFun(a?: string): string[] {
-  const res: string[] = [];
-  if (a) {
-    res.push(...a.split(""));
-  }
-  return res;
-}
-console.log(optionalFun());
-console.log(optionalFun("Hubba hubba"));
-*/
+// const lotMoreFun: FunType = ({ value, type }) => {
+//   console.log(value, type);
+// };
+// lotMoreFun({ value: 2, type: "burger" });
+
+// /*
+
+// // we can declare the function in a different way
+
+// // or with a type
+
+// */
+
+// // of course functions can return types, interfaces, primitives, classes. You name it
+// function evenMoreFun(...args: number[]): number[] {
+//   return args.map((x) => x * 2);
+// }
+// evenMoreFun(1, 2, 3, 4);
+
+// //
+// //
+// //
+// //
+// //
+// //
+// //
+
+// // Arguments can be optional
+// function optionalFun(a?: string): string[] {
+//   const res: string[] = [];
+//   if (a) {
+//     res.push(...a.split(""));
+//   }
+//   return res;
+// }
+// console.log(optionalFun());
+// console.log(optionalFun("Hubba hubba"));
+
 //   ▄████ ▓█████  ███▄    █ ▓█████  ██▀███   ██▓ ▄████▄    ██████
 //  ██▒ ▀█▒▓█   ▀  ██ ▀█   █ ▓█   ▀ ▓██ ▒ ██▒▓██▒▒██▀ ▀█  ▒██    ▒
 // ▒██░▄▄▄░▒███   ▓██  ▀█ ██▒▒███   ▓██ ░▄█ ▒▒██▒▒▓█    ▄ ░ ▓██▄
@@ -108,13 +113,12 @@ console.log(optionalFun("Hubba hubba"));
 //    ░              ░           ░ ░                 ░  ░   ░
 //                               ░ ░                      ░
 
-/*
-function mergeUntyped(a: object, b: object): object {
-  return Object.assign(a, b);
-}
-const merged1 = mergeUntyped({ name: "Han" }, { shotFirst: true });
-console.log(merged1.shotFirst); // Property 'shotFirst' does not exist on type 'object'.ts(2339)
-*/
+// function mergeUntyped(a: object, b: object): object {
+//   return Object.assign(a, b);
+// }
+
+// const merged1 = mergeUntyped({ name: "Han" }, { shotFirst: true });
+// console.log(merged1.shotFirst); // Property 'shotFirst' does not exist on type 'object'.ts(2339)
 
 // ▄▄▄█████▓▓██   ██▓ ██▓███  ▓█████ ▓█████▄
 // ▓  ██▒ ▓▒ ▒██  ██▒▓██░  ██▒▓█   ▀ ▒██▀ ██▌
@@ -126,31 +130,33 @@ console.log(merged1.shotFirst); // Property 'shotFirst' does not exist on type '
 //   ░       ▒ ▒ ░░  ░░          ░    ░ ░  ░
 //           ░ ░                 ░  ░   ░
 //           ░ ░                      ░
-/*
-function mergeTyped<T, U>(a: T, b: U) {
-  return Object.assign(a, b);
-}
-const merged2 = mergeTyped({ name: "Han" }, { shotFirst: true });
-console.log(merged2.shotFirst); // no error
 
-*/
+// function mergeTyped<T, U>(a: T, b: U) {
+//   return Object.assign(a, b);
+// }
 
-/*
-function countAndPrint<T extends { length: number }>(item: T): [T, string] {
-  let description = "Has no value";
-  if (item.length === 1) {
-    description = "Has one element";
-  } else {
-    description = `Has ${item.length} elements`;
-  }
-  return [item, description];
-}
+// const merged2 = mergeTyped({ name: "Han" }, { shotFirst: true });
+// console.log(merged2.shotFirst); // no error
 
-console.log(countAndPrint("Hi there"));
-console.log(countAndPrint(["Hi there"]));
-console.log(countAndPrint({ length: 100 }));
-console.log(countAndPrint(123));
-*/
+// function countAndPrint<T extends { length: number }>(item: T): [T, string] {
+//   let description = "Has no value";
+//   if (item.length === 1) {
+//     description = "Has one element";
+//   } else {
+//     description = `Has ${item.length} elements`;
+//   }
+//   return [item, description];
+// }
+
+// console.log(countAndPrint<string>("Hi there"));
+// console.log(
+//   countAndPrint<string[]>(["Hi there"])
+// );
+// console.log(
+//   countAndPrint<{ length: number }>({ length: 100 })
+// );
+// console.log(countAndPrint<{length: number}>(123));
+
 //
 //
 //
@@ -176,15 +182,14 @@ console.log(countAndPrint(123));
 //  ░░░ ░ ░    ░   ░ ░   ░       ▒ ▒ ░░  ░░          ░    ░ ░  ░
 //    ░              ░           ░ ░                 ░  ░   ░
 //
-/*░ ░                      ░
-function getByKeyUntyped(
-  // eslint-disable-next-line @typescript-eslint/ban-types
-  obj: object,
-  key: string
-) {
-  return obj[key]; // gives an error since it might not exsist
-}
-*/
+
+// function getByKeyUntyped(
+//   // eslint-disable-next-line @typescript-eslint/ban-types
+//   obj: object,
+//   key: string
+// ) {
+//   return obj[key]; // gives an error since it might not exsist
+// }
 
 // ▄▄▄█████▓▓██   ██▓ ██▓███  ▓█████ ▓█████▄
 // ▓  ██▒ ▓▒ ▒██  ██▒▓██░  ██▒▓█   ▀ ▒██▀ ██▌
@@ -196,7 +201,7 @@ function getByKeyUntyped(
 //   ░       ▒ ▒ ░░  ░░          ░    ░ ░  ░
 //           ░ ░                 ░  ░   ░
 //           ░ ░                      ░
-/*
+
 function getByKey<T extends Record<string, unknown>, U extends keyof T>(
   obj: T,
   key: U
@@ -204,7 +209,6 @@ function getByKey<T extends Record<string, unknown>, U extends keyof T>(
   return obj[key];
 }
 console.log(getByKey({ name: "Chewie" }, "name"));
-*/
 
 // excersise 2 - 10 - 15 minutes
 // write a function that takes an "any" object and makes on of your animals from ex5 out of it.
